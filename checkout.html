@@ -122,17 +122,148 @@
               </div>
 
               <div class="port-fields" id="portFields" style="display:none;">
-                <div class="form-group">
-                  <label class="form-label" for="portNumber">Current Phone Number</label>
-                  <input type="tel" id="portNumber" class="form-input" placeholder="07700 900000">
+                <div class="port-fields-header">
+                  <h3 class="port-fields-title">Port-in Your Number</h3>
+                  <p class="port-fields-desc">Please provide your details to move your number to Three.</p>
                 </div>
-                <div class="form-group">
-                  <label class="form-label" for="pacCode">PAC Code</label>
-                  <input type="text" id="pacCode" class="form-input" placeholder="e.g. ABC123456">
-                  <span class="form-hint">Text PAC to 65075 from your current phone to get your PAC code.</span>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="portNumber">Number to Port (Existing MSSIDN) <span class="required">*</span></label>
+                    <input type="tel" id="portNumber" class="form-input" placeholder="07700 900000" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="portType">Port Type <span class="required">*</span></label>
+                    <select id="portType" class="form-input form-select">
+                      <option value="PAC" selected>PAC</option>
+                      <option value="STAC">STAC</option>
+                    </select>
+                  </div>
                 </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="portCode">Port Code (PAC/STAC) <span class="required">*</span></label>
+                    <input type="text" id="portCode" class="form-input" placeholder="e.g. ABC123456" required>
+                    <span class="form-hint">Text PAC to 65075 or STAC to 75075 from your current phone.</span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="portDate">Port-in Date <span class="required">*</span></label>
+                    <input type="date" id="portDate" class="form-input" required>
+                  </div>
+                </div>
+
+                <div class="form-group" style="max-width: 50%;">
+                  <label class="form-label" for="portPriority">Port-In Priority <span class="required">*</span></label>
+                  <select id="portPriority" class="form-input form-select">
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="standard">Standard</option>
+                    <option value="urgent">Urgent</option>
+                  </select>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-md port-validate-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                  Validate Port-in Info
+                </button>
               </div>
             </form>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="checkout-section">
+            <div class="checkout-section-header">
+              <div class="checkout-section-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+              </div>
+              <div>
+                <h2 class="checkout-section-title">Additional Information</h2>
+                <p class="checkout-section-desc">A few more details required to process your order.</p>
+              </div>
+            </div>
+
+            <div class="checkout-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="maritalStatus">Marital Status <span class="required">*</span></label>
+                  <select id="maritalStatus" class="form-input form-select" required>
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="civil-partnership">Civil Partnership</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="separated">Separated</option>
+                    <option value="prefer-not">Prefer not to say</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="employmentTitle">Employment Title <span class="required">*</span></label>
+                  <select id="employmentTitle" class="form-input form-select" required>
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="miss">Miss</option>
+                    <option value="ms">Ms</option>
+                    <option value="dr">Dr</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="employmentStatus">Employment Status <span class="required">*</span></label>
+                  <select id="employmentStatus" class="form-input form-select" required>
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="employed-full">Employed (Full-time)</option>
+                    <option value="employed-part">Employed (Part-time)</option>
+                    <option value="self-employed">Self-employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                    <option value="retired">Retired</option>
+                    <option value="homemaker">Homemaker</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="employmentSince">Employment Since <span class="required">*</span></label>
+                  <input type="month" id="employmentSince" class="form-input" placeholder="Choose Month, Year" required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Details -->
+          <div class="checkout-section">
+            <div class="checkout-section-header">
+              <div class="checkout-section-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+              </div>
+              <div>
+                <h2 class="checkout-section-title">Order Details</h2>
+                <p class="checkout-section-desc">Delivery and account preferences.</p>
+              </div>
+            </div>
+
+            <div class="checkout-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="deliveryMethod">Delivery Method <span class="required">*</span></label>
+                  <select id="deliveryMethod" class="form-input form-select" required>
+                    <option value="home" selected>Home</option>
+                    <option value="click-collect">Click & Collect</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="existingCustomer">Existing Three Mobile Customer <span class="required">*</span></label>
+                  <select id="existingCustomer" class="form-input form-select" required>
+                    <option value="" disabled selected>-- Select --</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Step 2: Delivery -->
@@ -201,6 +332,69 @@
             </div>
           </div>
 
+          <!-- Payment & Financial Details (Direct Debit) -->
+          <div class="checkout-section">
+            <div class="checkout-section-header">
+              <div class="checkout-section-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <div>
+                <h2 class="checkout-section-title">Payment & Financial Details (Direct Debit)</h2>
+                <p class="checkout-section-desc">This will be used to set up your monthly Direct Debit for the plan.</p>
+              </div>
+            </div>
+
+            <div class="checkout-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="accountName">Account Holder Name <span class="required">*</span></label>
+                  <input type="text" id="accountName" class="form-input" placeholder="e.g. John Smith" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="sortCode">Sort Code <span class="required">*</span></label>
+                  <input type="text" id="sortCode" class="form-input" placeholder="XX-XX-XX" maxlength="8" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="accountNumber">Account Number <span class="required">*</span></label>
+                  <input type="text" id="accountNumber" class="form-input" placeholder="XXXXXXXX" maxlength="8" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="timeWithBank">Time with bank <span class="required">*</span></label>
+                  <input type="month" id="timeWithBank" class="form-input" placeholder="Choose Month, Year" required>
+                </div>
+              </div>
+
+              <label class="checkbox-row">
+                <input type="checkbox" class="checkbox-input" required>
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-label">By proceeding I confirm I understand and accept the <a href="#" class="form-link">Direct Debit Guarantee</a>. <span class="required">*</span></span>
+              </label>
+
+              <!-- Direct Debit Guarantee -->
+              <div class="dd-guarantee">
+                <div class="dd-guarantee-header">
+                  <h3 class="dd-guarantee-title">The Direct Debit Guarantee</h3>
+                  <div class="dd-logo">
+                    <svg width="48" height="24" viewBox="0 0 48 24" fill="none">
+                      <rect width="48" height="24" rx="4" fill="#f3f4f6"/>
+                      <text x="8" y="16" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#374151">DIRECT</text>
+                      <text x="8" y="22" font-family="Inter, sans-serif" font-size="5" font-weight="600" fill="#6b7280">Debit</text>
+                    </svg>
+                  </div>
+                </div>
+                <ul class="dd-guarantee-list">
+                  <li>This Guarantee is offered by all banks and building societies that accept instructions to pay Direct Debits.</li>
+                  <li>If there are any changes to the amount, date or interval of your Direct Debit, GoCardless will notify you 3 working days in advance of your account being debited or as otherwise agreed. If you request GoCardless to collect a payment, confirmation of the amount and date will be given to you at the time of the request.</li>
+                  <li>If an error is made in the payment of your Direct Debit, by GoCardless or your bank or building society, you are entitled to a full and immediate refund of the amount paid from your bank or building society. If you receive a refund you are not entitled to, you must pay it back when GoCardless asks you to.</li>
+                  <li>You can cancel a Direct Debit at any time by simply contacting your bank or building society. Written confirmation may be required. Please also notify us.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <!-- Step 3: Terms & Confirm -->
           <div class="checkout-section" id="step-3">
             <div class="checkout-section-header">
@@ -232,10 +426,12 @@
                 <span class="checkbox-label">I'd like to receive offers and updates from Purple Direct via email</span>
               </label>
 
-              <button type="submit" class="btn btn-primary btn-lg btn-block checkout-submit-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-                Place Order — £0.00 due today
-              </button>
+              <div class="checkout-actions-row">
+                <a href="#" class="btn btn-outline btn-lg checkout-back-btn" onclick="history.back(); return false;">Back</a>
+                <button type="submit" class="btn btn-primary btn-lg checkout-confirm-btn">
+                  Confirm Details →
+                </button>
+              </div>
 
               <div class="checkout-secure-note">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
@@ -260,6 +456,10 @@
                 <span class="order-price-period">/month</span>
               </div>
               <div class="order-plan-term">24 Month Plan</div>
+              <div class="order-plan-network">
+                <span class="network-badge-dot"></span>
+                Powered by <img src="images/image.png" alt="Three" class="network-logo-img">
+              </div>
             </div>
 
             <div class="order-features">

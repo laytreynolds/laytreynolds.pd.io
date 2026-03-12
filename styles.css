@@ -934,6 +934,88 @@ a {
   font-size: 1rem;
 }
 
+/* Network Branding */
+.network-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-bottom: 16px;
+}
+
+.network-badge strong {
+  color: var(--gray-700);
+}
+
+.network-logo-img {
+  height: 28px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.network-badge-featured {
+  justify-content: center;
+}
+
+.network-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2); }
+  50% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.08); }
+}
+
+.plan-network-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-400);
+  padding: 10px 0;
+  margin-bottom: 16px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.plan-network-strip svg {
+  color: var(--purple-400);
+}
+
+/* Mega Dropdown Network */
+.mega-plan-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--gray-500);
+  padding: 12px 0;
+  margin-bottom: 4px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.mega-plan-network strong {
+  color: var(--gray-700);
+}
+
+.mega-plan-network .network-logo-img {
+  height: 24px;
+}
+
 /* ============================================
    How It Works
    ============================================ */
@@ -2579,7 +2661,41 @@ a {
 .port-fields {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
+  padding: 24px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-lg);
+}
+
+.port-fields-header {
+  margin-bottom: 4px;
+}
+
+.port-fields-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 4px;
+}
+
+.port-fields-desc {
+  font-size: 0.83rem;
+  color: var(--gray-400);
+}
+
+.port-validate-btn {
+  align-self: flex-start;
+}
+
+/* Select Dropdown */
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+  cursor: pointer;
 }
 
 /* SIM Type Selection */
@@ -2693,9 +2809,65 @@ a {
   line-height: 1.5;
 }
 
-/* Submit */
+/* Submit / Actions */
 .checkout-submit-btn {
   margin-top: 8px;
+}
+
+.checkout-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.checkout-back-btn {
+  flex-shrink: 0;
+}
+
+.checkout-confirm-btn {
+  flex: 1;
+  max-width: 280px;
+}
+
+/* Direct Debit Guarantee */
+.dd-guarantee {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.dd-guarantee-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.dd-guarantee-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.dd-logo {
+  flex-shrink: 0;
+}
+
+.dd-guarantee-list {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dd-guarantee-list li {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  line-height: 1.65;
 }
 
 .checkout-secure-note {
@@ -2772,6 +2944,25 @@ a {
 .order-plan-term {
   font-size: 0.8rem;
   color: var(--gray-400);
+}
+
+.order-plan-network {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.order-plan-network strong {
+  color: var(--gray-700);
+}
+
+.order-plan-network .network-logo-img {
+  height: 24px;
 }
 
 .order-features {
