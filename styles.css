@@ -1188,41 +1188,26 @@ body.mobile-menu-open .mobile-menu {
 
 .why-section {
   padding: 100px 0;
-  background: linear-gradient(160deg, var(--gray-900), #1a0a2e);
+  background: var(--gray-50);
   position: relative;
   overflow: hidden;
 }
 
-.why-section::before {
-  content: '';
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(124, 58, 237, 0.2) 0%, transparent 70%);
-  top: -150px;
-  left: -150px;
-}
-
+.why-section::before,
 .why-section::after {
-  content: '';
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
-  bottom: -100px;
-  right: -100px;
+  display: none;
 }
 
 .why-section .section-eyebrow {
-  color: var(--gold-400);
+  color: var(--purple-500);
 }
 
 .why-section .section-title {
-  color: var(--white);
+  color: var(--gray-900);
 }
 
 .why-section .section-subtitle {
-  color: rgba(255,255,255,0.5);
+  color: var(--gray-500);
 }
 
 .why-grid {
@@ -1232,8 +1217,8 @@ body.mobile-menu-open .mobile-menu {
 }
 
 .why-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--white);
+  border: 1px solid var(--gray-200);
   border-radius: var(--radius-lg);
   padding: 36px 28px;
   transition: all 0.3s ease;
@@ -1241,32 +1226,34 @@ body.mobile-menu-open .mobile-menu {
   flex-direction: column;
   position: relative;
   z-index: 1;
-  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
 }
 
 .why-card:hover {
-  background: rgba(255,255,255,0.08);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
-  border-color: rgba(255,255,255,0.15);
+  border-color: var(--gray-300);
 }
 
 .why-card-featured {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(251, 191, 36, 0.25);
+  background: var(--white);
+  border-color: var(--purple-300);
+  box-shadow: 0 12px 40px -8px rgba(124, 58, 237, 0.12);
 }
 
 .why-card-featured:hover {
-  border-color: rgba(251, 191, 36, 0.4);
-  background: rgba(255,255,255,0.1);
+  border-color: var(--purple-400);
+  background: var(--white);
+  box-shadow: 0 20px 50px -12px rgba(124, 58, 237, 0.15);
 }
 
 .why-card-icon {
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background: rgba(124, 58, 237, 0.2);
-  color: var(--purple-300);
+  background: var(--purple-50);
+  color: var(--purple-500);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1274,8 +1261,8 @@ body.mobile-menu-open .mobile-menu {
 }
 
 .why-card-featured .why-card-icon {
-  background: rgba(251, 191, 36, 0.15);
-  color: var(--gold-400);
+  background: var(--purple-100);
+  color: var(--purple-600);
 }
 
 /* GBP icon from images/british-pound-svgrepo-com.svg – mask so colour inherits */
@@ -1294,31 +1281,31 @@ body.mobile-menu-open .mobile-menu {
 }
 
 .why-card-featured .why-card-icon-pound {
-  background: rgba(251, 191, 36, 0.15);
-  color: var(--gold-400);
+  background: var(--purple-100);
+  color: var(--purple-600);
 }
 
 .why-card-title {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--gray-900);
   margin-bottom: 10px;
 }
 
 .why-card-featured .why-card-title {
-  color: var(--white);
+  color: var(--gray-900);
 }
 
 .why-card-desc {
   font-size: 0.9rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--gray-600);
   line-height: 1.65;
   margin-bottom: 20px;
   flex: 1;
 }
 
 .why-card-featured .why-card-desc {
-  color: rgba(255,255,255,0.6);
+  color: var(--gray-600);
 }
 
 .why-card-tag {
@@ -1335,8 +1322,8 @@ body.mobile-menu-open .mobile-menu {
 }
 
 .why-card-featured .why-card-tag {
-  background: rgba(251, 191, 36, 0.12);
-  color: var(--gold-400);
+  background: var(--purple-50);
+  color: var(--purple-600);
 }
 
 .why-card-tag svg {
