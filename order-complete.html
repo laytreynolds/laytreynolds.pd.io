@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Complete - Purple Direct</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">📱</span>
+        <span class="logo-text">Purple<span class="logo-bold">Direct</span></span>
+      </a>
+      <nav class="nav">
+        <div class="nav-dropdown">
+          <button class="nav-link nav-link-trigger" aria-expanded="false">
+            Plans
+            <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-inner">
+              <div class="mega-sidebar">
+                <h5 class="mega-sidebar-label">Browse Plans</h5>
+                <a href="index.html#plans" class="mega-sidebar-item active">
+                  <span class="mega-sidebar-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                  Unlimited
+                </a>
+                <a href="index.html#plans" class="mega-sidebar-item">
+                  <span class="mega-sidebar-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                  Everyday
+                </a>
+                <a href="index.html#plans" class="mega-sidebar-item">
+                  <span class="mega-sidebar-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>
+                  Essential
+                </a>
+              </div>
+              <div class="mega-content">
+                <div class="mega-plan-card visible" id="plan-unlimited">
+                  <div class="mega-plan-header">
+                    <span class="mega-plan-badge badge-purple">UNLIMITED</span>
+                    <div class="mega-plan-pricing">
+                      <div class="mega-plan-data-tag">Unlimited Data</div>
+                      <div class="mega-plan-price-row"><span class="mega-plan-was">Was £30.00</span><span class="mega-plan-save">SAVE 25%</span></div>
+                      <div class="mega-plan-price">£22.50<span>/Month</span></div>
+                      <div class="mega-plan-term">£22.50 for 24 months</div>
+                    </div>
+                  </div>
+                  <div class="mega-plan-network">
+                    <span class="network-badge-dot"></span>
+                    Powered by <img src="images/three.png" alt="Three" class="network-logo-img"> · 5G Network
+                  </div>
+                  <a href="checkout.html" class="btn btn-primary btn-block mega-plan-cta">Order SIM →</a>
+                </div>
+                <div class="mega-plan-card" id="plan-everyday">
+                  <div class="mega-plan-header">
+                    <span class="mega-plan-badge badge-green">EVERYDAY</span>
+                    <div class="mega-plan-pricing">
+                      <div class="mega-plan-data-tag">50GB Data</div>
+                      <div class="mega-plan-price-row"><span class="mega-plan-was">Was £20.00</span><span class="mega-plan-save">SAVE 25%</span></div>
+                      <div class="mega-plan-price">£15.00<span>/Month</span></div>
+                      <div class="mega-plan-term">£15.00 for 24 months</div>
+                    </div>
+                  </div>
+                  <div class="mega-plan-network">
+                    <span class="network-badge-dot"></span>
+                    Powered by <img src="images/three.png" alt="Three" class="network-logo-img"> · 5G Network
+                  </div>
+                  <a href="checkout.html" class="btn btn-primary btn-block mega-plan-cta">Order SIM →</a>
+                </div>
+                <div class="mega-plan-card" id="plan-essential">
+                  <div class="mega-plan-header">
+                    <span class="mega-plan-badge badge-amber">ESSENTIAL</span>
+                    <div class="mega-plan-pricing">
+                      <div class="mega-plan-data-tag">8GB Data</div>
+                      <div class="mega-plan-price-row"><span class="mega-plan-was">Was £20.00</span><span class="mega-plan-save">SAVE 25%</span></div>
+                      <div class="mega-plan-price">£15.00<span>/Month</span></div>
+                      <div class="mega-plan-term">£15.00 Discount for 24 months</div>
+                    </div>
+                  </div>
+                  <div class="mega-plan-network">
+                    <span class="network-badge-dot"></span>
+                    Powered by <img src="images/three.png" alt="Three" class="network-logo-img"> · 5G Network
+                  </div>
+                  <a href="checkout.html" class="btn btn-primary btn-block mega-plan-cta">Order SIM →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-link-trigger" aria-expanded="false">
+            Help
+            <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="help-dropdown">
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html#faq">FAQs</a>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <a href="checkout.html" class="btn btn-outline btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+          Order SIM
+        </a>
+        <a href="login.html" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Login
+        </a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Menu" onclick="document.body.classList.toggle('mobile-menu-open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-overlay" onclick="document.body.classList.remove('mobile-menu-open')"></div>
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-header">
+        <span class="logo-text">Purple<span class="logo-bold">Direct</span></span>
+        <button class="mobile-menu-close" onclick="document.body.classList.remove('mobile-menu-open')" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <div class="mobile-menu-section">
+          <div class="mobile-menu-label">Plans</div>
+          <a href="index.html#plans" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">Unlimited</a>
+          <a href="index.html#plans" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">Everyday</a>
+          <a href="index.html#plans" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">Essential</a>
+        </div>
+        <div class="mobile-menu-section">
+          <div class="mobile-menu-label">Help</div>
+          <a href="contact.html" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">Contact Us</a>
+          <a href="index.html#faq" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">FAQs</a>
+        </div>
+        <a href="about.html" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">About Us</a>
+      </nav>
+      <div class="mobile-menu-actions">
+        <a href="checkout.html" class="btn btn-outline btn-block">Order SIM</a>
+        <a href="login.html" class="btn btn-primary btn-block">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Complete -->
+  <section class="order-complete-page">
+    <div class="container">
+      <h1 class="order-complete-title">Complete Your Order</h1>
+
+      <div class="order-complete-layout">
+        <div class="order-complete-main">
+          <!-- Review & Submit steps -->
+          <div class="order-complete-card order-complete-steps-card">
+            <h2 class="order-complete-card-title">Review & Submit</h2>
+            <ul class="order-complete-steps">
+              <li class="order-complete-step">
+                <span class="order-complete-step-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                </span>
+                <span class="order-complete-step-text">We Have Successfully Fetched Your Sim Number</span>
+                <span class="order-complete-step-status">Fetched</span>
+              </li>
+              <li class="order-complete-step">
+                <span class="order-complete-step-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                </span>
+                <span class="order-complete-step-text">We Have Successfully Reserved A Sim Number For Your Order</span>
+                <span class="order-complete-step-status">Locked</span>
+              </li>
+              <li class="order-complete-step">
+                <span class="order-complete-step-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                </span>
+                <span class="order-complete-step-text">Your Credit Check Has Been Successfully Approved</span>
+                <span class="order-complete-step-status">Approved</span>
+              </li>
+              <li class="order-complete-step">
+                <span class="order-complete-step-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                </span>
+                <span class="order-complete-step-text">We Have Successfully Setup Your Account With Three UK</span>
+                <span class="order-complete-step-status">Account Created</span>
+              </li>
+              <li class="order-complete-step">
+                <span class="order-complete-step-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                </span>
+                <span class="order-complete-step-text">We Have Successfully Processed Your Order With Three UK, You Will Receive The Confirmation Email By Three UK Shortly And Your Contract Information By Purple Direct</span>
+                <span class="order-complete-step-status">Order Processed</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Success message & order details -->
+          <div class="order-complete-success-box">
+            <div class="order-complete-success-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            </div>
+            <h2 class="order-complete-success-title">Order Created Successfully!</h2>
+            <p class="order-complete-success-desc">Your order is complete. You can track it from your dashboard.</p>
+            <div class="order-complete-details-grid">
+              <div class="order-complete-detail-col">
+                <div class="order-complete-detail-row">
+                  <span class="order-complete-detail-label">Order ID</span>
+                  <span class="order-complete-detail-value">SCS000162</span>
+                </div>
+                <div class="order-complete-detail-row">
+                  <span class="order-complete-detail-label">Tariff Name</span>
+                  <span class="order-complete-detail-value">Unlimited Lite SIMO 24M</span>
+                </div>
+                <div class="order-complete-detail-row">
+                  <span class="order-complete-detail-label">Ordered on</span>
+                  <span class="order-complete-detail-value">23-01-2026 11:56:05</span>
+                </div>
+                <div class="order-complete-detail-row">
+                  <span class="order-complete-detail-label">Product Order</span>
+                  <span class="order-complete-detail-value">#201209334A</span>
+                </div>
+              </div>
+              <div class="order-complete-detail-col">
+                <div class="order-complete-detail-row">
+                  <span class="order-complete-detail-label">Status</span>
+                  <span class="order-complete-detail-value order-complete-status-badge">COMPLETED</span>
+                </div>
+                <div class="order-complete-detail-row">
+                  <span class="order-complete-detail-label">Allocation Status</span>
+                  <span class="order-complete-detail-value">E SIM Issued</span>
+                </div>
+                <div class="order-complete-detail-row">
+                  <span class="order-complete-detail-label">MSSIDN</span>
+                  <span class="order-complete-detail-value">447361084684</span>
+                </div>
+                <div class="order-complete-detail-row">
+                  <span class="order-complete-detail-label">Customer ID</span>
+                  <span class="order-complete-detail-value">988683432</span>
+                </div>
+              </div>
+            </div>
+            <div class="order-complete-actions">
+              <a href="dashboard.html" class="btn btn-primary btn-lg">Go to My Dashboard</a>
+            </div>
+          </div>
+          <div class="order-complete-back-wrap">
+            <a href="checkout.html" class="btn btn-outline btn-lg">Back</a>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="order-complete-sidebar">
+          <div class="order-complete-plan-card">
+            <h3 class="order-complete-plan-name">UNLIMITED PLAN</h3>
+            <div class="order-complete-plan-pricing">
+              <span class="order-complete-plan-was">Was £30.00</span>
+              <span class="order-complete-plan-save">SAVE 33.33%</span>
+            </div>
+            <div class="order-complete-plan-price">£10<span>/month</span></div>
+            <div class="order-complete-plan-term">24 Month Plan</div>
+            <div class="order-complete-plan-features">
+              <div class="order-complete-plan-feature"><span class="order-complete-plan-feature-label">Data</span> <span class="order-complete-plan-feature-value">Unlimited Data</span></div>
+              <div class="order-complete-plan-feature"><span class="order-complete-plan-feature-label">Minutes</span> <span class="order-complete-plan-feature-value">Unlimited Minutes</span></div>
+              <div class="order-complete-plan-feature"><span class="order-complete-plan-feature-label">Texts</span> <span class="order-complete-plan-feature-value">Unlimited Texts</span></div>
+              <div class="order-complete-plan-feature"><span class="order-complete-plan-feature-label">Network</span> <span class="order-complete-plan-feature-value">5G Ready</span></div>
+            </div>
+            <div class="order-complete-plan-upfront">Upfront Payment: <strong>£0.00</strong></div>
+          </div>
+          <div class="order-complete-customer-card">
+            <h3 class="order-complete-customer-name">JOHN SMITH</h3>
+            <p class="order-complete-customer-email">joe@chadwelltelecom.co.uk</p>
+            <div class="order-complete-customer-details">
+              <div class="order-complete-customer-row">
+                <span class="order-complete-detail-label">Order ID</span>
+                <span class="order-complete-detail-value">SCS000162</span>
+              </div>
+              <div class="order-complete-customer-row">
+                <span class="order-complete-detail-label">Date of Birth</span>
+                <span class="order-complete-detail-value">26-01-2000</span>
+              </div>
+              <div class="order-complete-customer-row">
+                <span class="order-complete-detail-label">Phone</span>
+                <span class="order-complete-detail-value">07709868778</span>
+              </div>
+              <div class="order-complete-customer-row">
+                <span class="order-complete-detail-label">Marital Status</span>
+                <span class="order-complete-detail-value">Single</span>
+              </div>
+              <div class="order-complete-customer-row">
+                <span class="order-complete-detail-label">Employment Status</span>
+                <span class="order-complete-detail-value">Senior Manager</span>
+              </div>
+              <div class="order-complete-customer-row">
+                <span class="order-complete-detail-label">Employment Since</span>
+                <span class="order-complete-detail-value">01-01-2020</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.nav-link-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+        if (!isOpen) dropdown.classList.add('open');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+      }
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <span class="footer-logo-icon">pd</span>
+          <span class="footer-logo-text">Purple<span class="footer-logo-bold">Direct</span></span>
+        </a>
+        <p class="footer-tagline">Helping you stay connected, one SIM at a time.</p>
+        <a href="checkout.html" class="btn btn-footer-cta">Order SIM</a>
+      </div>
+      <div class="footer-nav">
+        <div class="footer-col">
+          <h5 class="footer-heading">Plans</h5>
+          <div class="footer-links-inline">
+            <a href="index.html#plans">Essential</a><span class="footer-sep">|</span>
+            <a href="index.html#plans">Everyday</a><span class="footer-sep">|</span>
+            <a href="index.html#plans">Unlimited</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-heading">Help</h5>
+          <div class="footer-links-inline">
+            <a href="contact.html">Contact Us</a><span class="footer-sep">|</span>
+            <a href="index.html#faq">FAQs</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5 class="footer-heading footer-heading-white">Get to know us</h5>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-legal-contact">
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a><span class="footer-sep">|</span><a href="#">Code of Practice</a><br>
+          <a href="#">Returns Policy</a><span class="footer-sep">|</span><a href="#">Network Terms &amp; Conditions</a><br>
+          <a href="#">Purple Direct Terms &amp; Conditions</a>
+        </div>
+        <div class="footer-contact">
+          <h5 class="footer-heading footer-heading-white">Contact Us</h5>
+          <div class="footer-links-inline">
+            <a href="tel:+4403334438194">+44 (0) 333 443 8194</a><span class="footer-sep">|</span>
+            <a href="mailto:Hello@purpledirect.co.uk">Hello@purpledirect.co.uk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Purple Direct Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
