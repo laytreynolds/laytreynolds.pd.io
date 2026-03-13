@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header (same as index) -->
   <header class="header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
@@ -18,12 +18,95 @@
         <span class="logo-text">Purple<span class="logo-bold">Direct</span></span>
       </a>
       <nav class="nav">
-        <a href="index.html#plans" class="nav-link">Plans</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-link-trigger" aria-expanded="false">
+            Plans
+            <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="mega-dropdown">
+            <div class="mega-dropdown-inner">
+              <div class="mega-sidebar">
+                <h5 class="mega-sidebar-label">Browse Plans</h5>
+                <a href="index.html#plans" class="mega-sidebar-item active">
+                  <span class="mega-sidebar-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                  Unlimited
+                </a>
+                <a href="index.html#plans" class="mega-sidebar-item">
+                  <span class="mega-sidebar-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+                  Everyday
+                </a>
+                <a href="index.html#plans" class="mega-sidebar-item">
+                  <span class="mega-sidebar-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>
+                  Essential
+                </a>
+              </div>
+              <div class="mega-content">
+                <div class="mega-plan-card visible" id="plan-unlimited">
+                  <div class="mega-plan-header">
+                    <span class="mega-plan-badge badge-purple">UNLIMITED</span>
+                    <div class="mega-plan-pricing">
+                      <div class="mega-plan-data-tag">Unlimited Data</div>
+                      <div class="mega-plan-price-row"><span class="mega-plan-was">Was £30.00</span><span class="mega-plan-save">SAVE 25%</span></div>
+                      <div class="mega-plan-price">£22.50<span>/Month</span></div>
+                      <div class="mega-plan-term">£22.50 for 24 months</div>
+                    </div>
+                  </div>
+                  <div class="mega-plan-network">
+                    <span class="network-badge-dot"></span>
+                    Powered by <img src="images/three.png" alt="Three" class="network-logo-img"> · 5G Network
+                  </div>
+                  <a href="checkout.html" class="btn btn-primary btn-block mega-plan-cta">Order SIM →</a>
+                </div>
+                <div class="mega-plan-card" id="plan-everyday">
+                  <div class="mega-plan-header">
+                    <span class="mega-plan-badge badge-green">EVERYDAY</span>
+                    <div class="mega-plan-pricing">
+                      <div class="mega-plan-data-tag">50GB Data</div>
+                      <div class="mega-plan-price-row"><span class="mega-plan-was">Was £20.00</span><span class="mega-plan-save">SAVE 25%</span></div>
+                      <div class="mega-plan-price">£15.00<span>/Month</span></div>
+                      <div class="mega-plan-term">£15.00 for 24 months</div>
+                    </div>
+                  </div>
+                  <div class="mega-plan-network">
+                    <span class="network-badge-dot"></span>
+                    Powered by <img src="images/three.png" alt="Three" class="network-logo-img"> · 5G Network
+                  </div>
+                  <a href="checkout.html" class="btn btn-primary btn-block mega-plan-cta">Order SIM →</a>
+                </div>
+                <div class="mega-plan-card" id="plan-essential">
+                  <div class="mega-plan-header">
+                    <span class="mega-plan-badge badge-amber">ESSENTIAL</span>
+                    <div class="mega-plan-pricing">
+                      <div class="mega-plan-data-tag">8GB Data</div>
+                      <div class="mega-plan-price-row"><span class="mega-plan-was">Was £20.00</span><span class="mega-plan-save">SAVE 25%</span></div>
+                      <div class="mega-plan-price">£15.00<span>/Month</span></div>
+                      <div class="mega-plan-term">£15.00 Discount for 24 months</div>
+                    </div>
+                  </div>
+                  <div class="mega-plan-network">
+                    <span class="network-badge-dot"></span>
+                    Powered by <img src="images/three.png" alt="Three" class="network-logo-img"> · 5G Network
+                  </div>
+                  <a href="checkout.html" class="btn btn-primary btn-block mega-plan-cta">Order SIM →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <a href="about.html" class="nav-link">About Us</a>
-        <a href="index.html#faq" class="nav-link">Help</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-link-trigger" aria-expanded="false">
+            Help
+            <svg class="nav-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="help-dropdown">
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html#faq">FAQs</a>
+          </div>
+        </div>
       </nav>
       <div class="header-actions">
-        <a href="#" class="btn btn-outline btn-sm">
+        <a href="checkout.html" class="btn btn-outline btn-sm">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
           Order SIM
         </a>
@@ -51,27 +134,31 @@
       <nav class="mobile-menu-nav">
         <div class="mobile-menu-section">
           <div class="mobile-menu-label">Plans</div>
-          <a href="index.html#plans" class="mobile-menu-link">
+          <a href="index.html#plans" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             Unlimited
           </a>
-          <a href="index.html#plans" class="mobile-menu-link">
+          <a href="index.html#plans" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             Everyday
           </a>
-          <a href="index.html#plans" class="mobile-menu-link">
+          <a href="index.html#plans" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
             Essential
           </a>
         </div>
         <div class="mobile-menu-section">
           <div class="mobile-menu-label">Help</div>
-          <a href="index.html#faq" class="mobile-menu-link">
+          <a href="contact.html" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            Contact Us
+          </a>
+          <a href="index.html#faq" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
             FAQs
           </a>
         </div>
-        <a href="about.html" class="mobile-menu-link">
+        <a href="about.html" class="mobile-menu-link" onclick="document.body.classList.remove('mobile-menu-open')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
           About Us
         </a>
@@ -98,7 +185,7 @@
         <div class="login-brand-content">
           <div class="login-brand-badge">My Account</div>
           <h1 class="login-brand-title">Welcome<br>back.</h1>
-          <p class="login-brand-subtitle">Manage your SIM, view your usage, and stay in control — all in one place.</p>
+          <p class="login-brand-subtitle">Manage your SIM, view your order history, and stay in control — all in one place.</p>
 
           <div class="login-brand-features">
             <div class="login-brand-feature">
@@ -236,6 +323,23 @@
           if (prev) { prev.focus(); prev.value = ''; }
         }
       });
+    });
+  </script>
+
+  <script>
+    document.querySelectorAll('.nav-link-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        const isOpen = dropdown.classList.contains('open');
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+        if (!isOpen) dropdown.classList.add('open');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+      }
     });
   </script>
 
