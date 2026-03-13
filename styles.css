@@ -736,8 +736,8 @@ body.mobile-menu-open .mobile-menu {
 
 .hero-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
   align-items: center;
 }
 
@@ -829,114 +829,21 @@ body.mobile-menu-open .mobile-menu {
   align-items: center;
 }
 
-.hero-card-stack {
+.hero-phone-img {
+  width: 200%;
+  max-width: 800px;
+  height: auto;
+  filter: drop-shadow(0 40px 80px rgba(124, 58, 237, 0.25)) drop-shadow(0 15px 30px rgba(0,0,0,0.1));
+  animation: hero-float 5s ease-in-out infinite;
   position: relative;
-  width: 340px;
-  height: 420px;
+  z-index: 1;
 }
 
-.hero-phone {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 220px;
-  height: 380px;
-  background: var(--gray-900);
-  border-radius: 32px;
-  padding: 12px;
-  box-shadow: var(--shadow-xl), 0 0 60px rgba(124, 58, 237, 0.15);
+@keyframes hero-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
 }
 
-.phone-screen {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, var(--purple-700) 0%, var(--purple-900) 100%);
-  border-radius: 22px;
-  padding: 32px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.phone-status {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: rgba(255,255,255,0.7);
-  font-size: 0.7rem;
-  font-weight: 500;
-}
-
-.phone-5g {
-  background: var(--gold-500);
-  color: var(--gray-900);
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  font-weight: 700;
-  font-size: 0.65rem;
-}
-
-.phone-data {
-  text-align: center;
-  color: var(--white);
-}
-
-.phone-data-label {
-  font-size: 0.75rem;
-  opacity: 0.7;
-  margin-bottom: 4px;
-}
-
-.phone-data-value {
-  font-size: 2.2rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.phone-data-bar {
-  width: 100%;
-  height: 6px;
-  background: rgba(255,255,255,0.2);
-  border-radius: var(--radius-full);
-  margin-top: 16px;
-}
-
-.phone-data-fill {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, var(--gold-400), var(--green-500));
-  border-radius: var(--radius-full);
-}
-
-.hero-sim-card {
-  position: absolute;
-  width: 80px;
-  height: 54px;
-  border-radius: 10px;
-  box-shadow: var(--shadow-lg);
-}
-
-.sim-1 {
-  background: linear-gradient(135deg, #f59e0b, #f97316);
-  top: 30px;
-  right: 10px;
-  transform: rotate(15deg);
-}
-
-.sim-2 {
-  background: linear-gradient(135deg, var(--purple-400), var(--purple-600));
-  bottom: 60px;
-  left: 0;
-  transform: rotate(-10deg);
-}
-
-.sim-3 {
-  background: linear-gradient(135deg, var(--green-500), #059669);
-  bottom: 20px;
-  right: 20px;
-  transform: rotate(8deg);
-}
 
 .hero-bg-blur {
   position: absolute;
@@ -1362,6 +1269,26 @@ body.mobile-menu-open .mobile-menu {
 }
 
 .why-card-featured .why-card-icon {
+  background: rgba(251, 191, 36, 0.15);
+  color: var(--gold-400);
+}
+
+/* GBP icon from images/british-pound-svgrepo-com.svg – mask so colour inherits */
+.why-card-icon-pound {
+  position: relative;
+  background: transparent;
+}
+
+.why-card-icon-pound::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: currentColor;
+  mask: url('images/british-pound-svgrepo-com.svg') center / 28px 28px no-repeat;
+  -webkit-mask: url('images/british-pound-svgrepo-com.svg') center / 28px 28px no-repeat;
+}
+
+.why-card-featured .why-card-icon-pound {
   background: rgba(251, 191, 36, 0.15);
   color: var(--gold-400);
 }
@@ -1974,14 +1901,8 @@ body.mobile-menu-open .mobile-menu {
     order: -1;
   }
 
-  .hero-card-stack {
-    width: 260px;
-    height: 340px;
-  }
-
-  .hero-phone {
-    width: 180px;
-    height: 300px;
+  .hero-phone-img {
+    max-width: 400px;
   }
 
   .pricing-grid {
@@ -2186,8 +2107,8 @@ body.mobile-menu-open .mobile-menu {
 
 .about-benefits-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
   align-items: center;
 }
 
@@ -2228,124 +2149,13 @@ body.mobile-menu-open .mobile-menu {
 }
 
 /* Phone Mockup */
-.phone-mockup {
-  display: flex;
-  justify-content: center;
-}
-
-.phone-mockup-frame {
-  width: 280px;
-  height: 500px;
-  background: var(--gray-900);
-  border-radius: 36px;
-  padding: 14px;
-  box-shadow: var(--shadow-xl), 0 0 80px rgba(124, 58, 237, 0.12);
-}
-
-.phone-mockup-screen {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, var(--purple-700), var(--purple-900));
-  border-radius: 24px;
-  padding: 40px 24px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.mockup-header {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.mockup-greeting {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--white);
-}
-
-.mockup-since {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.5);
-}
-
-.mockup-data-card {
-  background: rgba(255,255,255,0.1);
-  border-radius: 16px;
-  padding: 20px;
-  backdrop-filter: blur(8px);
-}
-
-.mockup-data-label {
-  font-size: 0.72rem;
-  color: rgba(255,255,255,0.6);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 4px;
-}
-
-.mockup-data-value {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: var(--white);
-  line-height: 1;
-}
-
-.mockup-data-value span {
-  font-size: 1.2rem;
-  font-weight: 600;
-  opacity: 0.7;
-}
-
-.mockup-data-bar {
-  width: 100%;
-  height: 6px;
-  background: rgba(255,255,255,0.15);
-  border-radius: var(--radius-full);
-  margin-top: 14px;
-}
-
-.mockup-data-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--gold-400), var(--green-500));
-  border-radius: var(--radius-full);
-  transition: width 1s ease;
-}
-
-.mockup-info-row {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.mockup-info-item {
-  background: rgba(255,255,255,0.08);
-  border-radius: 12px;
-  padding: 14px 16px;
-}
-
-.mockup-info-label {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 2px;
-}
-
-.mockup-info-value {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.mockup-btn {
-  background: rgba(255,255,255,0.15);
-  border-radius: 12px;
-  padding: 12px;
-  text-align: center;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--white);
-  margin-top: auto;
+.about-phone-img {
+  width: 200%;
+  max-width: 800px;
+  height: auto;
+  filter: drop-shadow(0 40px 80px rgba(124, 58, 237, 0.2)) drop-shadow(0 15px 30px rgba(0,0,0,0.08));
+  display: block;
+  margin: 0 auto;
 }
 
 /* Perfect Plan Section */
@@ -2551,6 +2361,10 @@ body.mobile-menu-open .mobile-menu {
 
   .about-benefits-visual {
     order: -1;
+  }
+
+  .about-phone-img {
+    max-width: 360px;
   }
 
   .values-grid {
