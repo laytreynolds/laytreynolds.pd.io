@@ -10,9 +10,9 @@
   --purple-400: #8b5cf6;
   --purple-500: #7c3aed;
   --purple-600: #6d28d9;
-  --purple-700: #5b21b6;
-  --purple-800: #4c1d95;
-  --purple-900: #3b0764;
+  --purple-700: #7e3ff2;
+  --purple-800: #7e3ff2;
+  --purple-900: #7e3ff2;
 
   --gold-400: #fbbf24;
   --gold-500: #f59e0b;
@@ -830,13 +830,14 @@ body.mobile-menu-open .mobile-menu {
 }
 
 .hero-phone-img {
-  width: 200%;
+  width: 100%;
   max-width: 800px;
   height: auto;
   filter: drop-shadow(0 40px 80px rgba(124, 58, 237, 0.25)) drop-shadow(0 15px 30px rgba(0,0,0,0.1));
   animation: hero-float 5s ease-in-out infinite;
   position: relative;
   z-index: 1;
+  border-radius: 50px;
 }
 
 @keyframes hero-float {
@@ -882,7 +883,7 @@ body.mobile-menu-open .mobile-menu {
   position: absolute;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(251, 191, 36, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
   bottom: -100px;
   left: -100px;
   z-index: 0;
@@ -916,17 +917,17 @@ body.mobile-menu-open .mobile-menu {
 }
 
 .pricing-card-featured {
-  border: 2px solid var(--gold-400);
-  box-shadow: 0 12px 40px -8px rgba(124, 58, 237, 0.18), 0 0 0 1px rgba(251, 191, 36, 0.15);
+  border: 2px solid var(--purple-400);
+  box-shadow: 0 12px 40px -8px rgba(124, 58, 237, 0.18), 0 0 0 1px rgba(139, 92, 246, 0.2);
   padding: 48px 28px 36px;
   transform: scale(1.05);
   z-index: 2;
-  background: linear-gradient(180deg, #fffcf0 0%, var(--white) 100%);
+  background: linear-gradient(180deg, var(--purple-50) 0%, var(--white) 100%);
 }
 
 .pricing-card-featured:hover {
   transform: scale(1.05) translateY(-4px);
-  box-shadow: 0 20px 50px -12px rgba(124, 58, 237, 0.22), 0 0 0 1px rgba(251, 191, 36, 0.2);
+  box-shadow: 0 20px 50px -12px rgba(124, 58, 237, 0.22), 0 0 0 1px rgba(139, 92, 246, 0.25);
 }
 
 .pricing-badge {
@@ -934,8 +935,8 @@ body.mobile-menu-open .mobile-menu {
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, var(--gold-400), var(--gold-500));
-  color: var(--gray-900);
+  background: linear-gradient(135deg, var(--purple-400), var(--purple-600));
+  color: var(--white);
   font-size: 0.72rem;
   font-weight: 700;
   padding: 6px 20px;
@@ -972,7 +973,7 @@ body.mobile-menu-open .mobile-menu {
 
 .pricing-card-featured .price-currency,
 .pricing-card-featured .price-amount {
-  color: var(--gold-500);
+  color: var(--purple-600);
 }
 
 .price-amount {
@@ -1006,6 +1007,10 @@ body.mobile-menu-open .mobile-menu {
   color: var(--gold-500);
   font-size: 0.9rem;
   letter-spacing: 1px;
+}
+
+.pricing-card-featured .stars {
+  color: var(--purple-500);
 }
 
 .rating-value {
